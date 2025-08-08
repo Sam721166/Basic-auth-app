@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <form action="/read">
+        <div class="text-white bg-zinc-900 p-10 w-full h-screen">
+            <% if(user.length > 0){ %>
+            <% user.forEach(function(user){ %>
+                <h2 class="text-white"><%= user.password %></h2>
+                <% }) %>
+            <% } %>
+            
+
+        </div>
+    </form>
+     
+</body>
+</html>
